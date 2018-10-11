@@ -21,16 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Mirant123/SKImageExtension'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Mirant123' => 'mirant@multidots.in' }
-  s.source           = { :git => 'https://github.com/Mirant123/SKImageExtension.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+                       s.homepage = 'https://github.com/Mirant123/SKImageExtension'
+                       s.source   = { :git => 'https://github.com/Mirant123/SKImageExtension.git', :tag => s.version.to_s }
+                       s.source_files = 'SKImageExtension/Classes/*.swift'
+                       s.frameworks = 'UIKit'
+                       
+                       
+                       
+                       s.license          = { :type => 'MIT', :file => 'LICENSE' }
+                       s.author           = { 'Mirant123' => 'mirant@multidots.in' }
+  
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'SKImageExtension/Classes/**/*'
   
   # s.resource_bundles = {
   #   'SKImageExtension' => ['SKImageExtension/Assets/*.png']
